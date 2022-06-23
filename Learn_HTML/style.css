@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+}
+
+html{
+	font-size: 16px;
+}
+
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 1%;
+}
+
+.inner{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 1%;
+}
+
+.wrapper{
+	width: 100%;
+	height: 100%;
+}
+
+.container{
+	width: 100%;
+	height: 100vh;
+	z-index: 5;
+}
+
+.navigation{
+	width: 100%;
+	background: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	z-index: 5;
+	box-shadow: 0 0 5px 0 #0094da;
+	padding: 13px 0;
+}
+
+.nav-bar{
+	align-items: center;
+	padding: 0 1%;
+}
+
+.nav-bar .blue{
+	color: #0094da;
+}
+
+.nav-bar h2{
+	color: #fff;
+}
+
+.nav-bar ul{
+	width: 45%;
+}
+
+.nav-bar ul li{
+	list-style: none;
+	font-size: 1rem;
+
+}
+
+.nav-bar ul a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+}
+
+.nav-bar ul li a:hover{
+	color: #0094da;
+	cursor: pointer;
+	border-bottom: 1px solid #0094da;
+}
+
+.nav-bar .toggle-btn{
+	display: none;
+	font-size: 30px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+
+.banner{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	text-align: center;
+	color: #fff;
+}
+
+.banner h1{
+	font-size: 3rem;
+	color: white;
+}
+
+.wrapper .video-container{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -6;
+}
+
+.wrapper .video-container video{
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+}
+
+.video-container .color-overlay{
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
+
+@media only screen and (max-width:768px){
+	.banner h1{
+		font-size:2.5rem;
+	}
+
+	.wrapper ul{
+		display: none;
+		padding: 0;
+		position: absolute;
+		top: 90px;
+		left: 0;
+		text-align: center;
+		background-color: #fff;
+		width: 100%;
+
+	}
+	.wrapper ul li{
+		padding: 20px 0;
+		margin-right: 30px;
+		display: block;
+		text-align: center;
+		font-size: 1.1rem;
+	}
+
+	.nav-bar ul a{
+		color: black;
+
+	}
+
+	.wrapper .toggle-btn{
+		display: block;
+		font-size: 1.8rem;
+		color: white;
+
+	}
+} 
